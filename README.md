@@ -51,9 +51,9 @@ This is a front-end educational platform that offers interactive learning paths 
 ```
 Scaler School of Technology/
 │
-├── index.html              # Main dashboard
-├── landing.html            # Welcome/landing page
+├── index.html              # Welcome/landing page (entry point)
 ├── login.html              # User login page
+├── dashboard.html          # Main dashboard
 │
 ├── dsa.html                # DSA subject page
 ├── webdev.html             # Web Development subject page
@@ -64,7 +64,7 @@ Scaler School of Technology/
 │
 ├── style.css               # Global stylesheet
 │
-├── index.js                # Dashboard progress logic
+├── dashboard.js            # Dashboard progress logic
 ├── dsa.js                  # DSA progress calculations
 ├── webdev.js               # Web Dev progress calculations
 ├── maths.js                # Mathematics progress calculations
@@ -87,8 +87,8 @@ Scaler School of Technology/
 1. **Clone or Download** the project folder
 
 2. **Open the landing page**:
-   - Double-click `landing.html` OR
-   - Open `landing.html` in your web browser
+   - Double-click `index.html` OR
+   - Open `index.html` in your web browser
 
 3. **Start Using**:
    - Click "Login" on the landing page
@@ -99,13 +99,13 @@ Scaler School of Technology/
 If you prefer using a local server:
 
 1. Install VS Code and the "Live Server" extension
-2. Right-click `landing.html` and select "Open with Live Server"
+2. Right-click `index.html` and select "Open with Live Server"
 3. The application will open in your default browser
 
 ## 📖 How to Use
 
 1. **Login**
-   - Start at `landing.html`
+   - Start at `index.html`
    - Click "Login" and enter your details
    - Your name will appear across all pages
 
