@@ -2,6 +2,12 @@
 
 A multi-page educational web application designed to provide structured learning and guided practice in core computer science subjects. Built with vanilla HTML, CSS, and JavaScript.
 
+## 🌐 Live Demo
+
+**[Visit Live Application](https://code-with-suraj-dotcom.github.io/Education-platform/)**
+
+Experience the platform directly in your browser - no installation required!
+
 ## 📋 Project Overview
 
 This is a front-end educational platform that offers interactive learning paths with quizzes and progress tracking across three main subjects:
