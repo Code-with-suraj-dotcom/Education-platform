@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="webdev.js" defer></script>
+    <script src="user.js"></script>
+
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header / Navbar -->
+        <header>
+            <div class="branding">
+                <img src="assets/scaler_logo.jfif" alt="Scaler School of Technology Logo" width="80" height="80">
+                <div class="brand-text">
+                    <h1>Scaler School of Technology</h1>
+                    <p>Master Core CS Skills with Guided Practice</p>
+                </div>
+            </div>
+            <div class="header-right">
+            <nav>
+                <a href="index.html">Dashboard</a>
+                <a href="index.html#subjects">Subjects</a>
+                <a href="index.html#progress">Progress</a>
+            </nav>
+
+            <div class="user-info">
+            <span>👋 Hi,</span>
+            <strong id="username">Student</strong>
+        </div>
+        </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <h2>Web Development (WebDev) </h2>
+            <p>
+               Web Development focuses on building modern, responsive, and interactive websites. This subject covers front-end fundamentals, core JavaScript concepts, and essential browser APIs that power real-world web applications.
+            </p>
+        </main>
+        <section class="webdev-stats">
+
+    <!-- WebDev Completion Progress -->
+    <div class="stat-card">
+        <h3>WebDev Completion</h3>
+        <div class="progress-wrapper">
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%;"></div>
+            </div>
+            <p class="progress-text">0% completed</p>
+        </div>
+    </div>
+
+    <!-- Average Quiz Score -->
+    <div class="stat-card">
+        <h3>Average Quiz Score</h3>
+        <p class="stat-value">0%</p>
+    </div>
+
+    <!-- Highest Quiz Score -->
+    <div class="stat-card">
+        <h3>Highest Quiz Score</h3>
+        <p class="stat-value">0%</p>
+    </div>
+
+</section>
+
+
+    <section class="webdev_topics">
+    <h2>Choose a Topic</h2>
+
+    <div class="topics-grid">
+    <article class="topic-card html">
+        <h3>HTML</h3>
+        <p>Difficulty: Beginner</p>
+        <p>Learn the structure and semantics of web pages using HyperText Markup Language.</p>
+        <a href="topics.html?subject=webdev&topic=html">View Topic</a>
+    </article>
+
+    <article class="topic-card css">
+        <h3>CSS</h3>
+        <p>Difficulty: Beginner</p>
+        <p>Explore styling techniques and layout designs using Cascading Style Sheets.</p>
+        <a href="topics.html?subject=webdev&topic=css">View Topic</a>  
+    </article>
+
+    <article class="topic-card locked">
+        <h3>JavaScript</h3>
+        <p>Difficulty: Intermediate</p>
+        <p>Understand core JavaScript concepts, DOM manipulation, and browser APIs.</p>
+        <span class="locked-text">🔒 Coming Soon</span>
+    </article>
+
+    <article class="topic-card locked">
+        <h3>DOM Manipulation</h3>
+        <p>Difficulty: Intermediate</p>
+        <p>Learn how to interact with and manipulate the Document Object Model (DOM) to create dynamic web pages.</p>
+        <span class="locked-text">🔒 Coming Soon</span>
+    </article>
+
+    </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Scaler School of Technology. All rights reserved.</p>
+        <p>Built as an end term project</p>
+    </footer>
+
+    </div>      
+    
+</body>
+</html>

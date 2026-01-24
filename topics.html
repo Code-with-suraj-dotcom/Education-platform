@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic | Scaler School of Technology</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="topic.js" defer></script>
+    <script src="js/user.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <header>
+        <div class="branding">
+            <img src="assets/scaler_logo.jfif" alt="Scaler Logo" width="80" height="80">
+            <div class="brand-text">
+                <h1>Scaler School of Technology</h1>
+                <p>Master Core CS Skills with Guided Practice</p>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <nav>
+                <a href="index.html">Dashboard</a>
+                <a href="index.html#subjects">Subjects</a>
+                <a href="index.html#progress">Progress</a>
+            </nav>
+
+            <div class="user-info">
+                <span>👋 Hi,</span>
+                <strong id="username">Student</strong>
+            </div>
+        </div>
+    </header>
+
+    <!-- Topic Intro -->
+    <main class="topic-intro">
+        <h2 id="topic-title"></h2>
+        <span class="difficulty" id="topic-difficulty"></span>
+        <p id="topic-description"></p>
+    </main>
+
+    <!-- Learning Content -->
+    <section class="topic-content" id="topic-content">
+        <!-- Content will be injected by JS -->
+    </section>
+
+    <!-- Quiz CTA -->
+    <section class="quiz-section">
+        <h3>Test Your Understanding</h3>
+        <p>Check how well you understood this topic by attempting a short quiz.</p>
+        <br>
+        <a id="start-quiz-btn" class="primary-btn">Start Quiz</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Scaler School of Technology. All rights reserved.</p>
+        <p>Built as an end term project</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

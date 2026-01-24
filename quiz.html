@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | Scaler School of Technology</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="quiz.js" defer></script>
+    <script src="js/user.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <header>
+        <div class="branding">
+            <img src="assets/scaler_logo.jfif" alt="Scaler Logo" width="80" height="80">
+            <div class="brand-text">
+                <h1>Scaler School of Technology</h1>
+                <p>Master Core CS Skills with Guided Practice</p>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <nav>
+                <a href="index.html">Dashboard</a>
+                <a href="index.html#subjects">Subjects</a>
+                <a href="index.html#progress">Progress</a>
+            </nav>
+
+            <div class="user-info">
+                <span>👋 Hi,</span>
+                <strong id="username">Student</strong>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quiz Intro -->
+    <main class="quiz-intro">
+        <h2 id="quiz-title">Quiz</h2>
+        <p id="quiz-description"></p>
+    </main>
+
+    <!-- Quiz Questions -->
+    <section class="quiz-section" id="quiz-section">
+        <!-- Questions injected by JS -->
+    </section>
+
+    <!-- Submit -->
+    <div class="quiz-submit">
+        <button id="submit-btn" class="primary-btn">Submit Quiz</button>
+    </div>
+
+    <!-- Result -->
+<section class="quiz-result" id="quiz-result" style="display:none;">
+    <h3>Your Result</h3>
+    <p id="score-text"></p>
+    <p id="feedback-text"></p>
+    <br>
+    <a href="dsa.html" class="primary-btn" id="back-to-subject-btn">Back to DSA</a>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Scaler School of Technology. All rights reserved.</p>
+        <p>Built as an end term project</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="maths.js" defer></script>
+    <script src="user.js"></script>
+
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header / Navbar -->
+        <header>
+            <div class="branding">
+                <img src="assets/scaler_logo.jfif" alt="Scaler School of Technology Logo" width="80" height="80">
+                <div class="brand-text">
+                    <h1>Scaler School of Technology</h1>
+                    <p>Master Core CS Skills with Guided Practice</p>
+                </div>
+            </div>
+            <div class="header-right">
+            <nav>
+                <a href="index.html">Dashboard</a>
+                <a href="index.html#subjects">Subjects</a>
+                <a href="index.html#progress">Progress</a>
+            </nav>
+
+            <div class="user-info">
+            <span>👋 Hi,</span>
+            <strong id="username">Student</strong>
+        </div>
+        </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <h2>Mathematics</h2>
+            <p>
+               Mathematics is the study of numbers, shapes, and patterns. This subject covers fundamental concepts such as algebra, geometry, calculus, and statistics, providing the tools to solve problems and understand the world quantitatively.
+            </p>
+        </main>
+        <section class="maths-stats">
+
+    <!-- Maths Completion Progress -->
+    <div class="stat-card">
+        <h3>Maths Completion</h3>
+        <div class="progress-wrapper">
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%;"></div>
+            </div>
+            <p class="progress-text">0% completed</p>
+        </div>
+    </div>
+
+    <!-- Average Quiz Score -->
+    <div class="stat-card">
+        <h3>Average Quiz Score</h3>
+        <p class="stat-value">0%</p>
+    </div>
+
+    <!-- Highest Quiz Score -->
+    <div class="stat-card">
+        <h3>Highest Quiz Score</h3>
+        <p class="stat-value">0%</p>
+    </div>
+
+</section>
+
+
+    <section class="maths_topics">
+    <h2>Choose a Topic</h2>
+
+    <div class="topics-grid">
+    <article class="topic-card locked">
+        <h3>Algebra</h3>
+        <p>Difficulty: Intermediate</p>
+        <p>Algebra involves the study of mathematical symbols and the rules for manipulating these symbols to solve equations and understand relationships between variables.</p>
+        <span class="locked-text">🔒 Coming Soon</span>
+    </article>
+
+    <article class="topic-card probability">
+        <h3>Probability</h3>
+        <p>Difficulty: Beginner</p>
+        <p>Explore the fundamentals of probability, including the calculation of likelihoods and the analysis of random events.</p>
+        <a href="topics.html?subject=maths&topic=probability">View Topic</a>  
+    </article>
+
+    <article class="topic-card statistics">
+        <h3>Statistics</h3>
+        <p>Difficulty: Beginner</p>
+        <p>Understand core concepts of statistics including data collection, analysis, interpretation, and presentation.</p>
+        <a href="topics.html?subject=maths&topic=statistics">View Topic</a>  
+    </article>
+
+    <article class="topic-card locked">
+        <h3>Discrete Mathematics</h3>
+        <p>Difficulty: Intermediate</p>
+        <p>Learn about discrete structures, logic, set theory, combinatorics, graph theory, and algorithms.</p>
+        <span class="locked-text">🔒 Coming Soon</span>
+    </article>
+
+    </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Scaler School of Technology. All rights reserved.</p>
+        <p>Built as an end term project</p>
+    </footer>
+
+    </div>      
+    
+</body>
+</html>
