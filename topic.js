@@ -11,23 +11,25 @@ const topics = {
 
             <article class="content-block">
                 <h3>Creating Arrays</h3>
-                <pre><code>let fruits = ["Apple", "Banana", "Orange"];
-let numbers = new Array(1, 2, 3, 4);</code></pre>
+                <pre><code>String[] fruits = {"Apple", "Banana", "Orange"};
+int[] numbers = {1, 2, 3, 4};
+int[] arr = new int[5]; // array of size 5</code></pre>
             </article>
 
             <article class="content-block">
                 <h3>Accessing Elements</h3>
-                <pre><code>let arr = [10, 20, 30];
-console.log(arr[0]); // 10
-console.log(arr.length);</code></pre>
+                <pre><code>int[] arr = {10, 20, 30};
+System.out.println(arr[0]); // 10
+System.out.println(arr.length); // 3</code></pre>
             </article>
 
             <article class="content-block">
-                <h3>Common Methods</h3>
-                <pre><code>arr.push(40);
-arr.pop();
-arr.map(x => x * 2);
-arr.filter(x => x > 15);</code></pre>
+                <h3>Common Operations with ArrayList</h3>
+                <pre><code>ArrayList&lt;Integer&gt; list = new ArrayList&lt;&gt;();
+list.add(40);
+list.remove(list.size() - 1);
+list.stream().map(x -&gt; x * 2).collect(Collectors.toList());
+list.stream().filter(x -&gt; x &gt; 15).collect(Collectors.toList());</code></pre>
             </article>
 
             <article class="content-block">
@@ -35,7 +37,8 @@ arr.filter(x => x > 15);</code></pre>
                 <ul>
                     <li>Arrays are zero-indexed</li>
                     <li>Fast access using index</li>
-                    <li>map, filter, reduce are powerful</li>
+                    <li>Fixed size in Java arrays</li>
+                    <li>Use ArrayList for dynamic sizing</li>
                 </ul>
             </article>
         `
@@ -94,14 +97,22 @@ text.trim();</code></pre>
         content: `
             <article class="content-block">
                 <h3>What is Recursion?</h3>
-                <p>Recursion occurs when a function calls itself directly or indirectly. Each recursive call works on a smaller problem.</p>
+                <p>Recursion occurs when a method calls itself directly or indirectly. Each recursive call works on a smaller problem.</p>
             </article>
 
             <article class="content-block">
-                <h3>Example</h3>
-                <pre><code>function factorial(n) {
-    if (n === 0) return 1;
+                <h3>Example: Factorial</h3>
+                <pre><code>public static int factorial(int n) {
+    if (n == 0) return 1;
     return n * factorial(n - 1);
+}</code></pre>
+            </article>
+
+            <article class="content-block">
+                <h3>Example: Fibonacci</h3>
+                <pre><code>public static int fibonacci(int n) {
+    if (n <= 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
 }</code></pre>
             </article>
 
@@ -111,6 +122,7 @@ text.trim();</code></pre>
                     <li>Always define a base case</li>
                     <li>Each call reduces problem size</li>
                     <li>Useful in trees and divide-and-conquer</li>
+                    <li>Can cause stack overflow if not careful</li>
                 </ul>
             </article>
         `
@@ -122,26 +134,52 @@ text.trim();</code></pre>
         description: "Searching and sorting algorithms help retrieve data efficiently and organize it logically.",
         content: `
             <article class="content-block">
-                <h3>Searching</h3>
-                <pre><code>function linearSearch(arr, x) {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === x) return i;
+                <h3>Linear Search</h3>
+                <pre><code>public static int linearSearch(int[] arr, int x) {
+    for (int i = 0; i &lt; arr.length; i++) {
+        if (arr[i] == x) return i;
     }
     return -1;
 }</code></pre>
             </article>
 
             <article class="content-block">
-                <h3>Sorting</h3>
-                <p>Sorting arranges elements in ascending or descending order to improve searching efficiency.</p>
+                <h3>Binary Search</h3>
+                <pre><code>public static int binarySearch(int[] arr, int x) {
+    int left = 0, right = arr.length - 1;
+    while (left &lt;= right) {
+        int mid = left + (right - left) / 2;
+        if (arr[mid] == x) return mid;
+        if (arr[mid] &lt; x) left = mid + 1;
+        else right = mid - 1;
+    }
+    return -1;
+}</code></pre>
+            </article>
+
+            <article class="content-block">
+                <h3>Bubble Sort</h3>
+                <pre><code>public static void bubbleSort(int[] arr) {
+    int n = arr.length;
+    for (int i = 0; i &lt; n - 1; i++) {
+        for (int j = 0; j &lt; n - i - 1; j++) {
+            if (arr[j] &gt; arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}</code></pre>
             </article>
 
             <article class="content-block">
                 <h3>Key Takeaways</h3>
                 <ul>
                     <li>Binary search works on sorted arrays</li>
-                    <li>Sorting improves performance</li>
+                    <li>Sorting improves searching performance</li>
                     <li>Different algorithms for different needs</li>
+                    <li>Time complexity matters for large datasets</li>
                 </ul>
             </article>
         `

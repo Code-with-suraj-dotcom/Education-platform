@@ -7,17 +7,27 @@ const quizzes = {
 
     arrays: {
         title: "Arrays Quiz",
-        description: "Test your understanding of Arrays.",
+        description: "Test your understanding of Arrays in Java.",
         questions: [
             {
-                q: "What is the index of the first element in an array?",
-                options: ["1", "0", "-1", "Depends on language"],
+                q: "What is the index of the first element in a Java array?",
+                options: ["1", "0", "-1", "Depends on declaration"],
                 answer: 1
             },
             {
-                q: "Which method adds an element at the end of an array?",
-                options: ["push()", "pop()", "shift()", "unshift()"],
+                q: "Which method adds an element at the end of an ArrayList in Java?",
+                options: ["add()", "push()", "append()", "insert()"],
                 answer: 0
+            },
+            {
+                q: "How do you declare an integer array of size 10 in Java?",
+                options: ["int arr[10];", "int[] arr = new int[10];", "array<int> arr(10);", "int arr = new array(10);"],
+                answer: 1
+            },
+            {
+                q: "What is the syntax to get the length of an array in Java?",
+                options: ["arr.size()", "arr.length()", "arr.length", "arr.count"],
+                answer: 2
             }
         ]
     },
@@ -41,16 +51,26 @@ const quizzes = {
 
     recursion: {
         title: "Recursion Quiz",
-        description: "Test your understanding of Recursion.",
+        description: "Test your understanding of Recursion in Java.",
         questions: [
             {
-                q: "What is mandatory in a recursive function?",
-                options: ["Loop", "Base case", "Array", "Global variable"],
+                q: "What is mandatory in a recursive method in Java?",
+                options: ["Loop", "Base case", "Array parameter", "Static keyword"],
                 answer: 1
             },
             {
+                q: "What is the return type of a recursive method that calculates factorial?",
+                options: ["void", "int", "String", "boolean"],
+                answer: 1
+            },
+            {
+                q: "What happens if a recursive method doesn't have a base case?",
+                options: ["Compilation error", "Returns null", "StackOverflowError", "Returns 0"],
+                answer: 2
+            },
+            {
                 q: "Recursion is best used for:",
-                options: ["Simple loops", "Divide and conquer", "Input output", "Sorting only"],
+                options: ["Simple loops", "Tree traversal and divide-and-conquer", "Variable declaration", "String concatenation"],
                 answer: 1
             }
         ]
@@ -58,16 +78,26 @@ const quizzes = {
 
     "searching-sorting": {
         title: "Searching & Sorting Quiz",
-        description: "Test your understanding of Searching and Sorting.",
+        description: "Test your understanding of Searching and Sorting in Java.",
         questions: [
             {
                 q: "Binary search works on:",
-                options: ["Any array", "Sorted array", "Linked list", "Graph"],
+                options: ["Any array", "Sorted array only", "Unsorted array", "Empty array"],
                 answer: 1
             },
             {
-                q: "Sorting helps in:",
-                options: ["Increasing memory", "Faster searching", "Reducing array size", "None"],
+                q: "What is the time complexity of linear search in worst case?",
+                options: ["O(1)", "O(log n)", "O(n)", "O(n²)"],
+                answer: 2
+            },
+            {
+                q: "Which sorting algorithm has O(n²) time complexity?",
+                options: ["Merge Sort", "Quick Sort", "Bubble Sort", "Binary Search"],
+                answer: 2
+            },
+            {
+                q: "In Java, which method is used to sort an array?",
+                options: ["Array.sort()", "Arrays.sort()", "Collections.sort()", "sort.Array()"],
                 answer: 1
             }
         ]
