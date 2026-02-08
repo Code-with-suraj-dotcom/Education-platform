@@ -24,16 +24,16 @@ const quizzes = {
 
     strings: {
         title: "Strings Quiz",
-        description: "Test your understanding of Strings.",
+        description: "Test your understanding of Java Strings.",
         questions: [
             {
-                q: "Strings in JavaScript are:",
-                options: ["Mutable", "Immutable", "Numbers", "Objects only"],
+                q: "In Java, String is:",
+                options: ["Primitive type", "A class (reference type)", "A wrapper", "A keyword"],
                 answer: 1
             },
             {
-                q: "Which method converts string to uppercase?",
-                options: ["upper()", "toUpper()", "toUpperCase()", "capitalize()"],
+                q: "Which method converts string to uppercase in Java?",
+                options: ["upper()", "toUpper()", "toUpperCase()", "Upper()"],
                 answer: 2
             }
         ]

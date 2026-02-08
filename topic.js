@@ -40,45 +40,48 @@ arr.filter(x => x > 15);</code></pre>
             </article>
         `
     },
-
+    
     strings: {
         title: "Strings",
         difficulty: "Difficulty: Beginner",
-        description: "Strings represent text data. They are sequences of characters and are widely used in user input handling, text processing, and validation.",
+        description: "Strings in Java represent sequences of characters. They are immutable objects and provide numerous methods for manipulation and processing text data.",
         content: `
             <article class="content-block">
-                <h3>What is a String?</h3>
-                <p>A string is a sequence of characters enclosed in quotes. In JavaScript, strings are immutable.</p>
+                <h3>What is a String in Java?</h3>
+                <p>A String is a sequence of characters enclosed in double quotes. In Java, strings are immutable, meaning once created, they cannot be changed.</p>
             </article>
 
             <article class="content-block">
                 <h3>Creating Strings</h3>
-                <pre><code>let name = "Scaler";
-let course = 'DSA';
-let platform = \`Scaler School\`;</code></pre>
+                <pre><code>String name = "Scaler";
+String course = new String("DSA");
+String platform = "Scaler School";</code></pre>
             </article>
 
             <article class="content-block">
                 <h3>Accessing Characters</h3>
-                <pre><code>let text = "Hello";
-console.log(text[0]);
-console.log(text.length);</code></pre>
+                <pre><code>String text = "Hello";
+char ch = text.charAt(0); // 'H'
+int length = text.length(); // 5</code></pre>
             </article>
 
             <article class="content-block">
-                <h3>String Methods</h3>
+                <h3>Common String Methods</h3>
                 <pre><code>text.toUpperCase();
-text.includes("He");
-text.slice(0, 3);
-text.split("");</code></pre>
+text.toLowerCase();
+text.contains("He");
+text.substring(0, 3);
+text.split(" ");
+text.trim();</code></pre>
             </article>
 
             <article class="content-block">
                 <h3>Key Takeaways</h3>
                 <ul>
-                    <li>Strings store text data</li>
-                    <li>Immutable in nature</li>
-                    <li>Rich set of built-in methods</li>
+                    <li>Strings are immutable in Java</li>
+                    <li>String class provides rich methods</li>
+                    <li>Use StringBuilder for mutable strings</li>
+                    <li>String comparison uses equals(), not ==</li>
                 </ul>
             </article>
         `
